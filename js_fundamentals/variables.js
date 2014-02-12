@@ -7,6 +7,18 @@
 // Store the following into variables: number of children, partner's name, geographic location, job title.
 // Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 
+var myFunction = function () {
+
+}
+
+function tellFortune(numChildren, partner, where, job) {
+	var fortune = "You will have " + numChildren + " children and be married to " + partner + " living in " + where + " and working as an " + job;
+	return fortune;
+}
+var result = tellFortune("a few", "someone", "a city", "employed person" );
+console.log(result);
+
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old someone is? Calculate it!
