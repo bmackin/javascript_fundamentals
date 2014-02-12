@@ -28,6 +28,14 @@ console.log(result);
 // Calculate their 2 possible ages based on the stored values.
 // Output them to the screen like so: "They are either NN or NN", substituting the values.
 
+var currentYear = 2014;
+var birthYear = 1914;
+
+var a = currentYear - birthYear;
+var b = (currentYear - birthYear) - 1;
+
+console.log("They are either " + a + "or " + b + "years old.");
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -38,13 +46,35 @@ console.log(result);
 // Calculate how many you would eat total for the rest of your life.
 // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
 
+var myAge = 25;
+var maxAge = 100;
+var maxDay = 1;
+
+var lifetimeSupply = ( maxAge - myAge ) * maxDay;
+
+console.log("You will need " + lifetimeSupply + " bags of sunflower seeds to last you until the ripe old age of " + maxAge);
+
 // EXERCISE: The Geometrizer
 
 // Calculate properties of a circle, using the definitions here.
 
 // Store a radius into a variable.
-// Calculate the circumference based on the radius, and output "The circumference is NN".
+// Calculate the circumference based on the radius, and output "The circumference is NN"
+
+var radius = 3
+var circumference = 2 * Math.PI * radius;
+
+console.log("The circumference is " + circumference )
+
+
 // Calculate the area based on the radius, and output "The area is NN".
+
+var radius = 3
+var area = Math.PI * Math.pow(3,2)
+
+console.log("The area is " + area)
+
+
 
 // EXERCISE: The Temperature Converter
 
@@ -54,5 +84,19 @@ console.log(result);
 // Convert it to fahrenheit and output "NN°C is NN°F".
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+
+var celsius = 18
+var fahrenheit = (celsius * 9)/5 + 32
+
+console.log(fahrenheit + " °F is " + celsius + " °C")
+
+
+
+
+
+
+
+
+
 
 
